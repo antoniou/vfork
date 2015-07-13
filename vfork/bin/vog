@@ -38,13 +38,13 @@ COMMAND_NAME=$0
 COMMAND_NAME=${COMMAND_NAME##*/}
 
 if [ x${VFORK_RANDOM_SOURCE} = x ]; then
-   VFORK_RANDOM_SOURCE=~/.vfork_random_source
+   VFORK_RANDOM_SOURCE=/root/.vfork_random_source
 fi
 
 if [ x${VFORK_RANDOM_SEED} = x ]; then
-   VFORK_RANDOM_SEED=~/.vfork_random_seed
+   VFORK_RANDOM_SEED=/root/.vfork_random_seed
 fi
- 
+
 # If you want to be able to list and generate instances of your own
 # classes, you should set VFORK_VOG to be a comma-separated list
 # of classnames. This allows this command to list and generate
